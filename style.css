@@ -16,8 +16,9 @@ body {
   margin: 0 auto;
   padding: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  text-align: center;
   background: transparent;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -25,6 +26,7 @@ body {
   border-radius: 10px;
   border: 3px solid #f6828c;
   cursor: url("images/cursorss.png"), auto;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #f6828c);
   box-shadow: 2.5px 2.5px 5px #000000;
   transition: width 0.5s ease-in, letter-spacing 0.5s ease, border 0.5s ease-in, box-shadow 0.5s ease-in, -webkit-backdrop-filter 0.5s ease-in;
   transition: width 0.5s ease-in, letter-spacing 0.5s ease, backdrop-filter 0.5s ease-in, border 0.5s ease-in, box-shadow 0.5s ease-in;
