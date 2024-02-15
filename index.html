@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div>
+        <h3 id="name"></h3>
+        <p id="role"></p>
+        <h4 id="add"></h4>
+      </div>
+      <img class="avatar" src="images/alltimeprofilepic-modified.png" />
+    </div>
+    <script>
+      let i = 0;
+      let x = 0;
+      let y = 0;
+      let name = "Ijerson Lastimosa";
+      let role = "FRONT END DEVELOPER";
+      let add = "Metro Manila, Philippines";
+      let speed = 50;
+
+      function typethis() {
+        typename();
+        typerole();
+        typeadd();
+      }
+
+      let typename = () => {
+        if (i < name.length) {
+          document.getElementById("name").innerHTML += name.charAt(i);
+          i++;
+          setTimeout(typename, speed);
+        }
+      };
+
+      let typerole = () => {
+        if (x < role.length) {
+          document.getElementById("role").innerHTML += role.charAt(x);
+          x++;
+          setTimeout(typerole, speed);
+        }
+      };
+
+      let typeadd = () => {
+        if (y < add.length) {
+          document.getElementById("add").innerHTML += add.charAt(y);
+          y++;
+          setTimeout(typeadd, speed);
+        }
+      };
+
+      typethis();
+    </script>
+  </body>
+</html>
